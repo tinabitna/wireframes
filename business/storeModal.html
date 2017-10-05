@@ -1,0 +1,21 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-energized">
+        <h1 style="color: white;" class="title">New Store</h1>
+        <button style="padding-right:80px;padding-top: 0; " class="button button-positive button-balanced-900"
+        ng-click="modal.hide()">Close</button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="padding">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Store Name:</span>
+                    <input type="text" ng-model="store.name"
+                    placeholder="Store Name">
+                </label>
+              
+                <button class="button button-block button-positive button-energized-900"
+                ng-click="addStore(store)">Create Store</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,55 @@
+<!--
+  #TIP: in this case we hide the navbar provided by navigation system.
+-->
+<ion-view hide-nav-bar="true" view-title="Sighnup">
+
+  <ion-header-bar class="bar-balanced-900">
+    <button ui-sref="app.login" class="button button-clear"><i class="white-color ion-arrow-left-c"></i></button>
+    <h2 style="color: white;padding-left: 55px;" class="title">Signup</h2>
+  </ion-header-bar>
+
+  <ion-content class="has-header has-footer padding full-height text-center">
+
+    <div style="padding-top:50px;">
+    <h2 class="sans-pro-light">Please provide this information</h2>
+
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Name</span>
+      <input type="text" placeholder="Your name" ng-model="data.name">
+    </label>
+
+    <label class="item item-input item-floating-label">
+      <span class="input-label">consumer or business?</span>
+      <input type="text" placeholder="consumer or business?" ng-model="data.type" >
+    </label>
+
+    
+    <label class="item item-input item-floating-label">
+      <span class="input-label">email</span>
+      <input type="text" placeholder="email" ng-model="data.email" >
+    </label>
+
+    <label class="item item-input item-floating-label">
+      <span class="input-label">consumer or business?</span>
+      <input type="password" placeholder="password" ng-model="data.password" >
+    </label>
+
+
+    <!-- <label class="item item-input">
+        <input type="password" placeholder="repeat password">
+    </label> -->
+
+    <!--
+      #NOT-IMPLEMENTED:
+      the button does nothing, implementation is up to you!
+    -->
+    <button class="button button-block button-energized"  ng-click="createUser(data)">SIGNUP</button>
+  
+    </div>
+    
+    
+  </ion-content>
+
+  <!-- we provide a link back to login in footer bar -->
+
+</ion-view>
